@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffa600d8;
+}
+
+.header {
+  display: flex;
+  background: linear-gradient(145deg, #3a3b3c, #0d1117);
+  height: 40px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4); */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /* margin-right: 4vw; */
+}
+
+h1 {
+  color: #e0e0e0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 96vw;
+  padding: 10px;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.input {
+  flex: 1;
+  padding: 20px;
+  background: linear-gradient(145deg, #2f3136, #23272a);
+  border-radius: 10px;
+  color: #f0f0f0;
+  /* box-shadow: 5px 5px 10px #111, -5px -5px 10px #333; */
+}
+
+.input h3 {
+  color: #ffd700;
+}
+
+.input label {
+  color: #e5e5e5;
+  font-weight: bold;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #413c49;
+  color: #f8f9fa;
+}
+
+input[type="radio"] + label {
+  margin-left: 5px;
+  color: #f0e68c;
+}
+
+.buttons_here button {
+  width: 70%;
+  padding: 5px;
+  margin: 5px 0;
+  background: linear-gradient(145deg, #4f5154, #1b1c1e);
+  border: none;
+  border-radius: 5px;
+  color: #ffc1c1;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.buttons_here button:hover {
+  background: linear-gradient(145deg, #6c7075, #222426);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+#balance_display {
+  font-size: 1.5rem;
+  color: #90ee90;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.sheet {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(145deg, #23272a, #16181b);
+  border-radius: 10px;
+  padding: 10px;
+  /* box-shadow: 5px 5px 10px #0b0c0d, -5px -5px 10px #2e3237; */
+}
+
+.sheet > div {
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px;
+  background: linear-gradient(145deg, #343a40, #1b1c1e);
+  border-radius: 5px;
+  /* box-shadow: inset 3px 3px 6px #0b0c0d, inset -3px -3px 6px #444; */
+}
+
+.sheet h2 {
+  color: #ffd700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.transaction-row {
+  border: 1px solid #aaa;
+  margin: 10px 0;
+  padding: 8px;
+  background-color: #2c3e50;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e0e0e0;
+}
+
+.transaction-amount,
+.transaction-category,
+.transaction-notes {
+  flex: 1;
+}
+
+.transaction-amount {
+  font-weight: bold;
+  color: #e9ce63;
+}
+
+.transaction-category {
+  font-style: italic;
+  color: #ecf0f1;
+}
+
+.transaction-notes {
+  color: #bdc3c7;
+}
+
+.delete-button {
+  background: linear-gradient(145deg, #b02a2a, #c0392b);
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.delete-button:hover {
+  background: linear-gradient(145deg, #e74c3c, #b33939);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.8); /* Glow effect */
+}

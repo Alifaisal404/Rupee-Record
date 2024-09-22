@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rupee Recorder</title>
+
+    <link rel="stylesheet" href="assests/css/style.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <h1><u>Rupee Recorder</u></h1>
+        <a href="https://github.com/Alifaisal404" target="_blank">
+            <img src="assests/icons/github_icon.ico" alt="GitHub" style="width: 30px; height: 30px; margin-left: 10px;">
+        </a>
+    </div>
+
+
+    <div class="container">
+        <div class="input">
+            <h3>Transaction Amount</h3>
+            <label for="amount_input">Enter the amount:</label>
+            <br>
+            <input type="number" id="amount_input" placeholder=" example 3500">
+
+            <h3>Select a category for the amount:</h3>
+            <input type="radio" name="category" id="education" value="Education">
+            <label for="education">Education 📗</label>
+            <br>
+            <input type="radio" name="category" id="utility" value="Utility">
+            <label for="utility">Utility 🍞</label>
+            <br>
+            <input type="radio" name="category" id="entertainment" value="Entertainment">
+            <label for="entertainment">Entertainment 🎈</label>
+            <br>
+            <input type="radio" name="category" id="savings" value="Savings">
+            <label for="savings">Savings 💰</label>
+            <br><br>
+            <label for="notes">Attach notes to this transaction (optional)</label>
+            <br>
+            <input type="text" id="notes" placeholder="buy garden hose from this...">
+            <br><br>
+
+            <div class="buttons_here">
+                <button id="submit_as_income">Submit as income</button>
+                <br>
+                <button id="submit_as_expense">Submit as expense</button>
+                <br>
+                <h3 id="balance_display">Balance: 0</h3>
+            </div>
+        </div>
+
+        <div class="sheet">
+            <div id="income_sheet">
+                <h2>Income</h2>
+            </div>
+            <div id="expense_sheet">
+                <h2>Expense</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="assests/js/script.js"></script>
+</body>
+
+</html>
